@@ -101,7 +101,7 @@ class Product extends Equatable {
     ),
     const Product(
       //id: '9',
-      name: 'Smoothies #1',
+      name: 'Smoothies #3',
       category: 'Smoothies',
       imageUrl:
           'https://images.unsplash.com/photo-1526424382096-74a93e105682?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', //https://unsplash.com/photos/kcYXj4tBtes
@@ -111,7 +111,7 @@ class Product extends Equatable {
     ),
     const Product(
       //id: '10',
-      name: 'Smoothies #2',
+      name: 'Smoothies #4',
       category: 'Smoothies',
       imageUrl:
           'https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1552&q=80', //https://unsplash.com/photos/CrK843Pl9a4
@@ -151,8 +151,18 @@ class Product extends Equatable {
     ),
     const Product(
       //id: '14',
-      name: 'Smoothies #2',
+      name: 'Smoothies #5',
       category: 'Smoothies',
+      imageUrl:
+          'https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1552&q=80', //https://unsplash.com/photos/CrK843Pl9a4
+      price: 2.99,
+      isRecommended: false,
+      isPopular: false,
+    ),
+    const Product(
+      //id: '15',
+      name: 'Water #1',
+      category: 'Water',
       imageUrl:
           'https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1552&q=80', //https://unsplash.com/photos/CrK843Pl9a4
       price: 2.99,
