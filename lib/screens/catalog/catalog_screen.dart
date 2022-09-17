@@ -21,17 +21,18 @@ class CatalogScreen extends StatelessWidget {
       appBar: CustomAppBar(title: category.name),
       bottomNavigationBar: const CustomNavBar(),
       body: GridView.builder(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1.15),
-          itemCount: categoryProducts.length,
-          itemBuilder: (context, index) {
-            return Center(
-              child: ProductCard(
-                product: categoryProducts[index],
-                widthFactor: 2.2,
-              ),
-            );
-          }),
+        padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1.15),
+        itemCount: categoryProducts.length,
+        itemBuilder: (context, index) {
+          return Center(
+            child: ProductCard(
+              product: categoryProducts[index],
+              widthFactor: 2.2,
+            ),
+          );
+        },
+      ),
     );
   }
 }
