@@ -18,6 +18,7 @@ class Product extends Equatable {
 
   @override
   List<Object?> get props => [name, category, imageUrl, price, isPopular, isRecommended];
+
   static List<Product> products = [
     const Product(
       //id: '1',

@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:ecommerce_app/blocs/wishlist_bloc/wishlist_bloc.dart';
+import 'package:ecommerce_app/blocs/cart/cart_bloc.dart';
+import 'package:ecommerce_app/blocs/wishlist/wishlist_bloc.dart';
 import 'package:ecommerce_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -47,13 +48,20 @@ class ProductScreen extends StatelessWidget {
                     Icons.share,
                     color: Colors.white,
                   )),
-              ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
-                  child: Text(
-                    'ADD TO CART',
-                    style: Theme.of(context).textTheme.headline3,
-                  ))
+              BlocBuilder<CartBloc, CartState>(
+                builder: (context, state) {
+                  return ElevatedButton(
+                      onPressed: () {
+                        context.read<CartBloc>().add(CartProductAdded(product));
+                        Navigator.pushNamed(context, '/cart');
+                      },
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
+                      child: Text(
+                        'ADD TO CART',
+                        style: Theme.of(context).textTheme.headline3,
+                      ));
+                },
+              )
             ],
           ),
         ),

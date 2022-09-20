@@ -1,4 +1,5 @@
-import 'package:ecommerce_app/blocs/wishlist_bloc/wishlist_bloc.dart';
+import 'package:ecommerce_app/blocs/cart/cart_bloc.dart';
+import 'package:ecommerce_app/blocs/wishlist/wishlist_bloc.dart';
 import 'package:ecommerce_app/config/app_router.dart';
 import 'package:ecommerce_app/config/theme.dart';
 import 'package:ecommerce_app/screens/home/home_screen.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => WishlistBloc()..add(StartWishlist())),
+        BlocProvider(create: (_) => CartBloc()..add(CartStarted())),
       ],
       child: MaterialApp(
         title: 'Zero To Unicorn',
