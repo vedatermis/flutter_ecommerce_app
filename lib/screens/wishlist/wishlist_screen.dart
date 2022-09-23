@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/blocs/wishlist_bloc/wishlist_bloc.dart';
+import 'package:ecommerce_app/blocs/wishlist/wishlist_bloc.dart';
 import 'package:ecommerce_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
