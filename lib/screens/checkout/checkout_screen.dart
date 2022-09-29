@@ -46,6 +46,7 @@ class CheckoutScreen extends StatelessWidget {
               'ORDER SUMMARY',
               style: Theme.of(context).textTheme.headline3,
             ),
+            const OrderSummary()
           ],
         ),
       ),

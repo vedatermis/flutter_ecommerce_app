@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         title: 'Zero To Unicorn',
         theme: theme(),
         onGenerateRoute: AppRouter.onGenerateRoute,
-        initialRoute: HomeScreen.routeName,
+        initialRoute: CheckoutScreen.routeName,
       ),
     );
   }
